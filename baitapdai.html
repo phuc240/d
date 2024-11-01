@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+//Header
+body {
+    margin: 0;
+    font-family: Times New Roman;
+}
+
+header {
+    background-color: #EEEEEE;
+    color: black;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left ul, .right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.left ul {
+    justify-content: flex-start;
+}
+
+.right ul {
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+	font-family: Arial ;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.logo {
+    text-align: center;
+    flex: 1 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: BLACK;
+}
+//Main
+.main-content {
+    padding: 20px;
+    background-color: #777;
+    color: #333;
+}
+
+.content-box {
+    background-color: #99CCCC;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 200px;
+}
+
+.content-box h3, .content-box h3 {
+    margin-top: 0;
+}
+ .button {
+          background-color: red;
+			color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+}
+
+//Main2
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+	font-family: "Times New Roman";
+}
+
+.logo img {
+    width: 100px;
+}
+
+.square-container {
+    display: flex;
+    justify-content: center;
+}
+
+.large-square{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    background-color: green;
+    padding: 10px;
+}
+
+.small-square {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    border: 2px solid #ccc;
+}
+
+.small-square .logo {
+    text-align: center;
+}
+p {
+    font-size: 16px;
+	}
+.h2{
+ font-family: "Times New Roman";
+ }
+ .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.info-box {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+    margin: 10px;
+}
+
+.info-box img {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.more-info {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-learning {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+//footer
+.logo img{
+		display: inline;
+		height: 100px;
+		width: auto;
+		}
+		table[class="h1"] h2,h3{
+		color: grey;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 100px;
+		}
+		table[class="h2"] h2,h3{
+		color: yellow;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		display:inline-table;
+		background-color: green;
+		}
+img {
+    width: 100px;
+    height: 100px;
+	}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <nav class="left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                  <span>Auteur</span>
+            </div>
+            <nav class="right">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Blog</a></li>
+            </ul>
+			</nav>
+			</div>
+			</header>
+ <main class="main-content">
+        <div class="content-box">
+            <h3>MEET YOUR NEXT </h3>
+			<h3>ONLINE COURSES</h3>
+			<button id="button"> Purchase </button>
+		<div>
+			<div class="anhmain">
+			<img src="./anh/hocbai.jpg">
+		</div>
+		<div>
+			<div class="anhmain">
+			<img src="./anh/hocbai.jpg">
+			
+		</div>
+	</div>
+    </main>
+	<div class="logo-container">
+        <div class="logo">
+            <h2>Welcome To Aurteur</h2>
+        </div>
+    </div>
+    <div class="square-container">
+        <div class="large-square">
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>IT</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>HEATH</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>LANGUAGE</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>BUSINESS</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>MAGAGEMENT</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>ENGLISH</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>PERSONAL</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>SALES</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>ENERGY</p>
+                </div>
+            </div>
+            <div class="small-square">
+                <div class="logo">
+                    <img src="./anh/SachKT1.jpg">
+                    <p>TEACHING</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	  <div class="info-container">
+        <div class="info-box">
+            <img src="./anh/SachKT1.jpg">
+            <p>Healthy</p>
+			<h3>Caregiving Skills - Dementia Care</h3>
+            <div class="button-container">
+                <button class="more-info">More Info</button>
+                <button class="start-learning">Start Learning</button>
+            </div>
+        </div>
+        <div class="info-box">
+            <img src="./anh/SachKT2.jpg">
+            <p>Business</p>
+			<h3>HACCP Food Safety System for Restaurants</h3>
+            <div class="button-container">
+                <button class="more-info">More Info</button>
+                <button class="start-learning">Start Learning</button>
+            </div>
+        </div>
+        <div class="info-box">
+            <img src="./anh/SachKT1.jpg">
+            <p>Business</p>
+			<h3>Eimply dummy text printing ypese tting.</h3>
+            <div class="button-container">
+                <button class="more-info">More Info</button>
+                <button class="start-learning">Start Learning</button>
+            </div>
+        </div>
+        <div class="info-box">
+            <img src="./anh/SachKT2.jpg">
+            <p>Education</p>
+			<h3> typesetting industry orem Ipsum</h3>
+            <div class="button-container">
+                <button class="more-info">More Info</button>
+                <button class="start-learning">Start Learning</button>
+            </div>
+        </div>
+    </div>
+</main>
+<table class="h1">
+<tr>
+<td id="h1">
+	<h2> ALISON </h2>
+ <table class="h1">
+<tr>
+<td id="h2">
+<ol>
+	<h2> FEATURED LINKS </h2>
+	<li><h3>Graduation</li></h3>
+	<li><h3>Admissions</li></h3>
+	<li><h3>International</li></h3>
+	<li><h3>FAQs</li></h3>
+	<img src="./anh/forlogo.png">
+</ol>
+</body>
+</html>
